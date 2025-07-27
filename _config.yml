@@ -1,0 +1,45 @@
+# Theme settings
+doks:
+    baseurl: /BulkDelete
+    color_theme: # Available themes: blue (default), green, purple, red and yellow
+    header:
+        logo:
+            text: Bulk Delete
+            image:
+        nav:
+            - item_name: www.bcapps.co
+              external_url:  true
+              item_url: https://www.bcapps.co
+            - item_name: More Apps
+              external_url: true
+              item_url: https://docs.bcapps.co
+            - item_name: Log Issue
+              external_url: true
+              item_url: https://github.com/BCAppsLimited/BulkDelete/issues/new/choose
+    footer:
+        content:
+            logo:
+                text: Bulk Delete
+                image: false
+            copyright: Copyright &copy; 2025. - BC Apps Limited <br>All rights reserved.
+        social_list:
+            - network_name: home
+              profile_url: https://www.bcapps.co
+            - network_name: github
+              profile_url: https://github.com/BCAppsLimited/BulkDelete
+    google_analytics:
+        tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
+    comments:
+        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+
+# SASS settings
+sass:
+    sass_dir: ./doks-theme/_sass
+    style: :compressed
+
+# Jekyll settings
+layouts_dir: ./doks-theme/_layouts
+includes_dir: ./doks-theme/_includes
+exclude: [ 'README.md', 'CHANGELOG.md' ]
+permalink: /:title/
+environment: Production
