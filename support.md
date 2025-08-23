@@ -24,8 +24,8 @@ page_nav:
         content: Privacy Statement
         url: /privacy-statement
     next:
-        content: 
-        url: 
+        content: Release Notes
+        url: /release-notes
 ---
 
 # Get Help

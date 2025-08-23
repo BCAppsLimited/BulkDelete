@@ -49,4 +49,8 @@ grid_navigation:
       excerpt: In the unfortunate event of an error whilst using our app, you can contact us for help.
       cta: Find out how
       url: '/support'
+    - title: Release Notes
+      excerpt: Find out what's new in the latest release.
+      cta: Find out how
+      url: '/release-notes'  
 ---
