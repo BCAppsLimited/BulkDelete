@@ -103,7 +103,7 @@ If you want to add the **Bulk Delete** action to your own extensions, you can si
       "version": "1.0.0.0"
     }
 ```
-Then on the list page, simply add the following action.
+Then on the list page, simply add the following action. Please note that this is for deleting Item records from the Item Card page. You should replace the BC_BulkDelete with your own action name that uses your own prefix, you should change the ItemToDelete variable declaration and name to refer to the record you are actually deleting. The option will use the multi-select as the required records to delete if the user has selected more than one record, otherwise it will copy the filters from the record.
 
 ```
 actions
