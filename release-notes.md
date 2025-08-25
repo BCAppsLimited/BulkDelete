@@ -28,7 +28,7 @@ page_nav:
         url: 
 ---
 
-# What's New in Version 1.0.9.0 
+# What's New in Version 1.0.10.0 
 
 Based on feedback from users of version 1.0.7.0, we've had a complete rethink of the Bulk Delete app and have made some great improvements.
 
