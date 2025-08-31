@@ -28,6 +28,16 @@ page_nav:
         url: 
 ---
 
+# What's New in Version 1.0.11.0 
+
+We've introduced an option on the Bulk Delete Request card that controls what should be stored when a record is successfully deleted. You can now minimise the records created by the bulk delete by selecting "Nothing" or leave the default as "Record Identifier Only". 
+
+![Image showing the Store After Delete OK option.](/screenshots/releasenotes/StoreAfterDeletedOK.png)
+
+We've also added an option to the Bulk Delete Requests list page that allows you to select multiple requests and delete them making it even easier than ever to keep your database tidy.
+
+![Image showing the Delete Selected action on the Bulk Delete Requests list page.](/screenshots/releasenotes/DeleteSelected.png)
+
 # What's New in Version 1.0.10.0 
 
 Based on feedback from users of version 1.0.7.0, we've had a complete rethink of the Bulk Delete app and have made some great improvements.
@@ -53,7 +63,7 @@ Notice that there is a close button in the top right corner of the dialog page. 
 
 The **Delete Now** option has been replaced with a split button that includes many options for deleting your data. You can now click the drop-down icon to the right of the **Delete Now** button and select from related actions, such as **Delete in Background**.
 
-![Image showing the Delete Now split button with Delete in Backgoround action.](/screenshots/releasenotes/DeleteNowSplitButton.png)
+![Image showing the Delete Now split button with Delete in Background action.](/screenshots/releasenotes/DeleteNowSplitButton.png)
 
 This will schedule a background task to carry out the delete which allows you to continue working in Business Central. The progress of the background task can be seen in the new **Latest Run Details** section on the **General** tab of the **Bulk Delete Request Card**.
 
