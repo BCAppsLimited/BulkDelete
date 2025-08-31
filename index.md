@@ -51,6 +51,6 @@ grid_navigation:
       url: '/support'
     - title: Release Notes
       excerpt: Find out what's new in the latest release.
-      cta: Find out how
+      cta: Read all about it
       url: '/release-notes'  
 ---
