@@ -46,10 +46,11 @@ There are some list pages in Business Central where you can only delete records 
 - **Items**
 - **Customers**
 - **Vendors**
+- **Fixed Assets**
 
-There are also occasions where you want to delete a whole bunch of records and you don't really want to sit there hitting the delete button, waiting for the related card page to launch with a question asking if you want to delete the record, selecting yes, waiting for the delete to succeed or fail, reviewing the error messages, etc.
+There are also occasions where you want to delete a whole bunch of records quickly. Or maybe you need to delete a huge amount of records but want the system to take care of it, quietly, while no-one else is using the system.
 
-The Bulk Delete app adds a new **Bulk Delete** action to the Items, Customers, and Vendors list pages that will create a bulk delete request which you can review before continuing. Any errors for records that could not be deleted are logged for you to review later.
+The Bulk Delete app adds a new **Bulk Delete** action to the Items, Customers, Vendors, and Fixed Assets list pages that will create a bulk delete request which you can review before continuing. Any errors for records that could not be deleted are logged for you to review later. Simply set the filters you want on the page to show the records you want to delete and select the Bulk Delete action.
 
 # Permissions and Checks
 
@@ -57,7 +58,7 @@ The Bulk Delete app does not grant a user additional permissions, so you'll only
 
 # Bulk Delete Any Table
 
-As well as creating bulk delete requests from the Items, Customers, and Vendors list pages, you can create a new Bulk Delete Request and pick from any of the available tables.
+As well as creating bulk delete requests from the Items, Customers, Vendors and Fixed Assets list pages, you can create a new Bulk Delete Request and pick from any of the available tables.
 
 # How Much?
 

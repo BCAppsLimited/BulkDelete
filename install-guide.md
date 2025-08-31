@@ -30,7 +30,7 @@ page_nav:
 
 # Installation
 
-You can install this app from the [Bulk Delete page on AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.bcappslimited1693858041247%7CAID.bulk-delete%7CPAPPID.f6ed7976-9eb2-4854-b0e3-ab8a4a3f23ea?tab=Overview) by clicking the **Get it now** button. This can only be used to install the app in your organisations tenancy. If, on the other hand, you are installing this extension in your customer's tenancy, you can use the Business Central app to install the extension. 
+You can install this app from the [Bulk Delete page on AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.bcappslimited1693858041247%7CAID.bulk-delete%7CPAPPID.f6ed7976-9eb2-4854-b0e3-ab8a4a3f23ea?tab=Overview) by clicking the **Get it now** button. This can only be used to install the app in your organisation's tenancy. If, on the other hand, you are installing this extension in your customer's tenancy, you can use the Business Central app to install the extension. 
 
 Open your Business Central Sandbox environment and use the Alt+Q keypress or click the Search icon in the toolbar to bring up the search dialog which says *Tell me what you want to do* at the top of box. Type *appsource* in the box and you will see an option for **Microsoft AppSource apps**.
 

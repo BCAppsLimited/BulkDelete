@@ -48,11 +48,11 @@ The system will display a confirmation dialog to ensure you really want to delet
 
 ![Image showing the confirmation dialog for deleting four selected records.](/screenshots/usagescenarios/ConfirmDeleteFourItems.png)
 
-Select **Yes** to continue with the delete. The system will attempt to delete each record in turn and record whether the delete succeeded or failed. You can see the results in the **Deleted Records** FactBox.
+Select **Yes** to continue with the delete. The system will attempt to delete each record in turn and record whether the delete succeeded or failed. You can see the results in the **Latest Run Details** group.
 
-![Image showing the results of the bulk delete.](/screenshots/usagescenarios/DeletedRecordsFactBox.png)
+![Image showing the results of the bulk delete.](/screenshots/usagescenarios/LatestDeleteRun.png)
 
-You can review the reasons why the records failed to delete by clicking the drill down on the **Failed to Delete** cue to see the **Delete Requests** page.
+You can review the reasons why the records failed to delete by clicking the drill down on the **Failed to Delete** count to see the **Delete Requests** page.
 
 ![Image showing the four records that failed to delete.](/screenshots/usagescenarios/DeleteRequestsWithFourErrors.png)
 
