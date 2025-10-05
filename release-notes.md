@@ -28,6 +28,26 @@ page_nav:
         url: 
 ---
 
+# What's New in Version 1.0.14.0
+
+## Name
+
+We've added a **Name** field to the bulk delete request which makes it easier to identify saved requests that run regularly. The field is also available on the **Bulk Delete Runs** page showing you the **Bulk Delete Request Name** and allowing a drill-down action to take you to the related request.
+
+## Improved Filtering
+
+We've fixed an issue where invalid filters entered for a bulk delete request would cause an error when the page opened and essentially make the bulk delete request unusable. Now when you enter a filter the entered value is validated and must be corrected if it is invalid. It's always been possible to use placeholders in your filters but now you will receive immediate feedback if the filter you have entered is not valid. Filters that use placeholders will have the current value of the resolved filter shown in a new resolved filter field.
+
+## Resolved Filters
+
+We've added a new **Resolved Filter** field to the filters section of the bulk delete request card which allows you to see how any placeholders you have entered into the filter will resolve. Use placeholders in date fields like **t** for today, or date formulae like **<t-90d** to mean less than 90 days prior to today's date. You can also use placeholders such as **%mycustomers**, **%myvendors**, or **%me** to resolve to the customer or vendor codes in your favourites or your own user name. See [Using Filter Tokens](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-enter-criteria-filters#FilterTokens) in Microsoft Learn for more details on using filter tokens as placeholders.
+
+In addition to showing how an individual filter will resolve, we've added a **Resolved Filters** fact box to the bulk delete request run page to show which filters were applied when the run was carried out.
+
+## Estimated Time Fix
+
+We've fixed a bug in the estimated time to complete on the bulk delete request run fact box where the value was not being calculated correctly.
+
 # What's New in Version 1.0.11.0 
 
 We've introduced an option on the Bulk Delete Request card that controls what should be stored when a record is successfully deleted. You can now minimise the records created by the bulk delete by selecting "Nothing" or leave the default as "Record Identifier Only". 
