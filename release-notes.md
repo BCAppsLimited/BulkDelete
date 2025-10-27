@@ -32,7 +32,7 @@ page_nav:
 
 ## DateTime Filtering
 
-Thanks to your feedback we discovered that it is not possible to use formulae to filter DateTime fields. This is a common requirement for bulk delete scenarios where we want to delete records that were created more than a month ago. Typically we would use "<t-1m" as our filter value and expect this to resolve to "<27/09/25 12:00 AM" (where 27/09/2025 is today's date and you are using a region that has dd/MM/yy as a date formatting default).
+Thanks to your feedback we discovered that it is not possible to use formulae to filter DateTime fields. This is a common requirement for bulk delete scenarios where we want to delete records that were created more than a month ago. Typically we would use "<t-1m" as our filter value and expect this to resolve to "<27/09/25 12:00 AM" (where 27/10/2025 is today's date and you are using a region that has dd/MM/yy as a date formatting default).
 
 We've added some magic to the app so you can now use the same date formulae in a *DateTime* field that you would use in a *Date* field and it will get translated.
 
