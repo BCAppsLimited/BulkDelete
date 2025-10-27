@@ -28,7 +28,7 @@ page_nav:
         url: 
 ---
 
-# What's Coming in the Next Release
+# What's New in Version 1.0.15.0
 
 ## DateTime Filtering
 
