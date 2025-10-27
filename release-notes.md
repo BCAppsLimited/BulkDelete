@@ -28,6 +28,26 @@ page_nav:
         url: 
 ---
 
+# What's Coming in the Next Release
+
+## DateTime Filtering
+
+Thanks to your feedback we discovered that it is not possible to use formulae to filter DateTime fields. This is a common requirement for bulk delete scenarios where we want to delete records that were created more than a month ago. Typically we would use "<t-1m" as our filter value and expect this to resolve to "<27/09/25 12:00 AM" (where 27/09/2025 is today's date and you are using a region that has dd/MM/yy as a date formatting default).
+
+We've added some magic to the app so you can now use the same date formulae in a *DateTime* field that you would use in a *Date* field and it will get translated.
+
+## Counting Records
+
+Although we fixed the ability to enter incorrect filter fields by validating filter entry, there were still problems if you had old invalid data which caused the **Bulk Delete Request Card** page to fail when trying to calculate the **Filtered Records Count**. Now the system will simply show "Invalid Filters" in the count field which allows you to continue using the page as normal.
+
+## CountApprox
+
+Bulk Delete is being used in the real world where some tables have millions of records and we noticed a delay showing the page and the prompt to confirm deletion when there are large numbers of records to count. Now if there is more than a million records, we will use the *CountApprox* command instead of the *Count* which improves performance. This is only the first step in solving this issue when we are looking to see if a background task can be used to make more improvements. We will use CountApprox when there are more than a million records and the **Filtered Records Count** will show "(approx)" after the count.
+
+## Created At Captions
+
+As a minor tidy up, we've fixed captions on some pages that show SystemCreatedAt fields that now show *Create At* as the field caption.
+
 # What's New in Version 1.0.14.0
 
 ## Name
