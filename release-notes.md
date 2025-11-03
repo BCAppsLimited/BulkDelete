@@ -28,6 +28,10 @@ page_nav:
         url: 
 ---
 
+# What's New in Version 1.0.16.0
+
+We've made the Bulk Delete option from Customer, Vendor, Item, and Fixed Asset lists even easier to use. After a confirmation dialog, the process shows a progress dialog as it deletes the selected records. Any errors are shown in the error details page after the delete has completed.
+
 # What's New in Version 1.0.15.0
 
 ## DateTime Filtering
