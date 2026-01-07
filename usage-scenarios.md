@@ -50,12 +50,6 @@ You can review the reasons why the records failed to delete by clicking the dril
 
 ![Image showing the four records that failed to delete.](/screenshots/usagescenarios/DeleteRequestsWithFourErrors.png)
 
-If you are finished with the Bulk Delete Request, you can return to the Bulk Delete Request Card and delete the record. This will prompt for deletion.
-
-![Image showing the confirmation dialog for deleting a Bulk Delete Request record.](/screenshots/usagescenarios/DeleteBulkDeleteReqeuestConfirmation.png)
-
-Select the **Yes** button and the system will delete the Bulk Delete Request record and the associated filter lines and results records.
-
 # Bulk Delete Any Table
 
 <div class="callout callout--warning">
