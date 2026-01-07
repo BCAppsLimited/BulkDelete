@@ -44,7 +44,7 @@ Select **Yes** to continue with the delete. The system will attempt to delete ea
 
 If any of the selected records failed to delete, you will see a dialog box asking if you would like to review the error messages for the failed delete attempts.
 
-![Image showing the results of the bulk delete.](/screenshots/usagescenarios/CompleteWith1OK3Fail.png)
+![Image showing the results of the bulk delete.](/screenshots/usagescenarios/CompleteWith4Fail.png)
 
 You can review the reasons why the records failed to delete by clicking the drill down on the **Failed to Delete** count to see the **Delete Requests** page.
 
