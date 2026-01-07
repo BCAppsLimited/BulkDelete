@@ -28,6 +28,29 @@ page_nav:
         url: 
 ---
 
+# What's New in Version 2.0.19.0
+
+## Licensing Changes
+
+The quick Bulk Delete action on Customers, Vendors, Items, and Fixed Assets remain available to all users for free without a license. The advanced features of delete package management can be configured by any user with the appropriate permissions, but only those uses with at Bulk Delete Standard license will be able to run the delete operations.
+
+## Delete Packages
+
+In this release we've had a complete rethink of how the Bulk Delete processing should work and have come up with a new system which we are calling *Delete Packages*. Here's an overview of the changes.
+
+- Delete Packages allow you to define a set of tables that will be processed in a single package.
+- Unlike Bulk Delete Requests which could not be edited after the first run, Delete Packages can be changed at any time.
+- Tables within a package (called **Delete Package Lines**) can be reordered using **Move Up** and **Move Down** actions to change the execution order.
+- A **Delete Action** for each line replaces the **Store After Delete OK** option (which included *Record Identifier Only* and *Nothing* as choices) which allows delete actions of *Delete and Log*, *Delete Only*, and *Truncate*. The truncate option does not run the standard delete triggers and is therefore only available in a Sandbox environment.
+- A single Job Queue Entry codeunit will process all Delete Packages where the **Job Queue Filter** is set to **Available for Processing**. The **Parameter String** on the Job Queue Entry can be used as a filter for Delete Packages to be processed allowing a single Job Queue Entry to process all available packages or only those that match the filter.
+- An option to add the delete history (the **Delete Package Run** details) to a package so that it will keep the log data under control.
+- The progress dialog when deleting as a foreground task has been removed and has resulted in a noticeable performance increase.
+- The counting of records now happens as a page background task meaning the page will render even if there are many millions of records that match the filter. Previously extremely large tables could have a significant delay when waiting for the record count to complete.
+- Delete Package definitions can now be exported and imported which is a useful way to preserve "data clean-up" packages that get lost when a Sandbox is overwritten with a copy of Production.
+
+
+
+
 # What's New in Version 1.0.16.0
 
 We've made the Bulk Delete option from Customer, Vendor, Item, and Fixed Asset lists even easier to use. After a confirmation dialog, the process shows a progress dialog as it deletes the selected records. Any errors are shown in the error details page after the delete has completed.

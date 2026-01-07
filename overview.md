@@ -41,6 +41,10 @@ If you delete something you didn't mean to delete using our extension, you're on
 
 # What is Bulk Delete?
 
+## Free Features
+
+You can install Bulk Delete without needing to purchase a license and can use the quick bulk delete features for free. For details on how to install without a license, see the [Install Without a License topic in the Install Guide](/BulkDelete/install-guide/#install-without-a-license).
+
 There are some list pages in Business Central where you can only delete records one at a time. For example:
 
 - **Items**
@@ -48,9 +52,7 @@ There are some list pages in Business Central where you can only delete records 
 - **Vendors**
 - **Fixed Assets**
 
-There are also occasions where you want to delete a whole bunch of records quickly. Or maybe you need to delete a huge amount of records but want the system to take care of it, quietly, while no-one else is using the system.
-
-The Bulk Delete app adds a new **Bulk Delete** action to the Items, Customers, Vendors, and Fixed Assets list pages that will create a bulk delete request which you can review before continuing. Any errors for records that could not be deleted are logged for you to review later. Simply set the filters you want on the page to show the records you want to delete and select the Bulk Delete action.
+The Bulk Delete app adds a new **Bulk Delete** action to the Items, Customers, Vendors, and Fixed Assets list pages that will allow you to delete a selection of records.  Any errors for records that could not be deleted are logged for you to review later. Simply select the records you want to delete and select the Bulk Delete action. For more details, see the [Delete Selected Records topic in the Usage Scenarios](/BulkDelete/usage-scenarios/#delete-selected-records).
 
 # Permissions and Checks
 
@@ -58,7 +60,9 @@ The Bulk Delete app does not grant a user additional permissions, so you'll only
 
 # Bulk Delete Any Table
 
-As well as creating bulk delete requests from the Items, Customers, Vendors and Fixed Assets list pages, you can create a new Bulk Delete Request and pick from any of the available tables.
+There are also occasions where you want to delete a whole bunch of records quickly. Or maybe you need to delete a huge amount of records but want the system to take care of it, quietly, while no-one else is using the system.
+
+As well as manually processing bulk delete requests from the Items, Customers, Vendors, and Fixed Assets list pages, you can create a new Delete Package and pick select which tables you want to delete.
 
 # How Much?
 

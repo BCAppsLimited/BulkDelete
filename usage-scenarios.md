@@ -26,31 +26,25 @@ page_nav:
     next:
         content: Context Sensitive Help
         url: /context-sensitive-help
----
+--- 
 
-# Delete Items, Customers, or Vendors
+# Delete Selected Records
 
-In this topic we'll cover how to perform a bulk delete on a list of items, although the same process can be followed for customers or vendors using the appropriate pages.
+In this topic we'll cover how to perform a bulk delete on a list of items, although the same process can be followed for customers, vendors, or fixed assets using the appropriate pages.
 
-From the **Item List** page, select the records you wish to delete either by selecting multiple records as shown in the following image or applying a filter to match the records you want to delete.
+From the **Item List** page, select the records you wish to delete by selecting multiple records as shown in the following image.
 
 ![Image showing the Item List page with the Bulk Delete Action being selected.](/screenshots/usagescenarios/ItemListBulkDelete.png)
 
-From the Actions, select the **Bulk Delete** option. The system will create a new bulk delete request using the information you selected and show you the **Bulk Delete Request Card**.
-
-![Image showing the Bulk Delete Request Card with the select item records.](/screenshots/usagescenarios/ItemPendingBulkDeleteRequestCard.png)
-
-The system has converted the records you selected into a filter for the **No.** field on the **Item** table. You can see that the **Filtered Records Count** field shows a count of four records to be deleted.
-
-Once you are ready to proceed and delete the records, click the **Delete Now** action.
-
-The system will display a confirmation dialog to ensure you really want to delete the selected records.
+From the Actions, select the **Bulk Delete** option. The system will display a confirmation dialog to ensure you really want to delete the selected records.
 
 ![Image showing the confirmation dialog for deleting four selected records.](/screenshots/usagescenarios/ConfirmDeleteFourItems.png)
 
-Select **Yes** to continue with the delete. The system will attempt to delete each record in turn and record whether the delete succeeded or failed. You can see the results in the **Latest Run Details** group.
+Select **Yes** to continue with the delete. The system will attempt to delete each record in turn and record whether the delete succeeded or failed. The dialog box will show the progress of the delete action and an estimated time to complete.
 
-![Image showing the results of the bulk delete.](/screenshots/usagescenarios/LatestDeleteRun.png)
+If any of the selected records failed to delete, you will see a dialog box asking if you would like to review the error messages for the failed delete attempts.
+
+![Image showing the results of the bulk delete.](/screenshots/usagescenarios/CompleteWith1OK3Fail.png)
 
 You can review the reasons why the records failed to delete by clicking the drill down on the **Failed to Delete** count to see the **Delete Requests** page.
 
@@ -63,6 +57,10 @@ If you are finished with the Bulk Delete Request, you can return to the Bulk Del
 Select the **Yes** button and the system will delete the Bulk Delete Request record and the associated filter lines and results records.
 
 # Bulk Delete Any Table
+
+<div class="callout callout--warning">
+The new version of Bulk Delete uses <b>Delete Packages</b> which will replace the old <b>Bulk Delete Request</b> options. You should transfer your bulk delete requests to a delete package if you wish to continue using the background delete features as the bulk delete request feature will be removed in a future release.
+</div>
 
 As well as creating bulk delete requests from the Items, Customers, and Vendors list pages, you can create a new Bulk Delete Request and pick from any of the available tables.
 
@@ -90,6 +88,15 @@ Notice how the **Filtered Records Count** has changed to reflect the number of r
 
 Now continue as normal and use the **Delete Now** action as described in the previous usage scenario.
 
+# Creating a Delete Package
+
+**Delete Packages** allow you to create a package and select multiple tables that will be deleted in the order in which they appear.
+
+# Background Processing via the Job Queue
+
+To process delete packages via the job queue, create a job queue entry for Codeunit 71922936 BC_ProcessAvailablePackages. This will find any delete packages with a **Job Queue Filter** field set to **Available for Processing** and process the package in the background.
+
+One single job queue entry will process all available packages, however you can use the Parameter String field on the job queue entry to provide additional filters that will be applied to the delete package code.
 
 # For Developers
 
@@ -100,7 +107,7 @@ If you want to add the **Bulk Delete** action to your own extensions, you can si
       "id": "f6ed7976-9eb2-4854-b0e3-ab8a4a3f23ea",
       "name": "Bulk Delete",
       "publisher": "BC Apps Limited",
-      "version": "1.0.0.0"
+      "version": "2.0.19.0"
     }
 ```
 Then on the list page, simply add the following action. Please note that this is for deleting Item records from the Item Card page. You should replace the BC_BulkDelete with your own action name that uses your own prefix, you should change the ItemToDelete variable declaration and name to refer to the record you are actually deleting. The option will use the multi-select as the required records to delete if the user has selected more than one record, otherwise it will copy the filters from the record.
@@ -118,20 +125,15 @@ Then on the list page, simply add the following action. Please note that this is
                 Image = DeleteRow;
                 ApplicationArea = All;
 
-
                 trigger OnAction()
                 var
                     CustomerToDelete: Record Customer;
-                    BulkDeleteManager: Codeunit BC_BulkDeleteManager;
+                    ProcessSelection: Codeunit BC_ProcessSelection;
                 begin
                     CurrPage.SetSelectionFilter(CustomerToDelete);
-                    BulkDeleteManager.BulkDeleteSelectedRecords(CustomerToDelete);
+                    ProcessSelection.DeleteSelectedRecords(CustomerToDelete);
                 end;
             }
         }
     }
 ```
-
----
-
-[^1]: Well, you could restore a point-in-time backup of your environment and export the lost data and then, restore back to after you deleted the data and re-import the data, but this would be a serious nuisance. If you find yourself in this unfortunate situation, please contact your partner.
