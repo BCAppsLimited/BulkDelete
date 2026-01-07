@@ -118,7 +118,7 @@ Due to the nature of this application, it is likely you will only need a single 
 
 The first stage of the checkout process requires you to select a plan.
 
-![Image showing the AppSource page for Checkout select plan.](/screenshots/install/CheckoutSelectPlan.png)
+![Image showing the AppSource page for Checkout select plan.](/screenshots/install/CheckoutSelectAPlan.png)
 
 There is only one plan to select from so click the **Next** button to continue.
 
