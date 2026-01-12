@@ -184,6 +184,6 @@ Increase the total number of licenses to the new required amount and select **Sa
 
 ## Grant Permissions
 
-The licenses provide entitlements to objects within the application but not permissions. Currently there are no assignable permission sets for the Bulk Delete app. An unlicensed user will be able to use the free functionality without additional permissions. A licensed user will have additional rights to be able to process delete packages either in foreground or as a job queue entry. If you have the SUPER role then you will be able to use the delete packages without additional permissions.
+The licenses provide entitlements to objects within the application but not permissions. A regular user that wants to use the free functionality does not need any additional permissions assigning. A licensed user will have additional rights to be able to process delete packages either in foreground or as a job queue entry. These users will need additional permissions. If you have the SUPER role then you will be able to use the delete packages without additional permissions, otherwise you should assign the BC_BD_ALL permission set which includes all rights for all objects within the extension.
 
 That's all there is to it. For more details on how you can use the Bulk Delete extension, see the [Usage Scenarios](/BulkDelete/usage-scenarios) help topic.
