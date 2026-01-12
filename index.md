@@ -26,7 +26,7 @@ grid_navigation:
       cta: Read more
       url: /overview
     - title: Install Guide
-      excerpt: Read this section for details on how to install the app. The app is completely free, so no need to worry about setting up licenses, just install and go.
+      excerpt: Read this section for details on how to install the app. The app is free for some features, so no need to worry about setting up licenses, just install and go. If you want all the goodies, we cover how to buy the full version too.
       cta: Show Me How
       url: /install-guide
     - title: Usage Scenarios
