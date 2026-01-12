@@ -62,13 +62,7 @@ The Bulk Delete app does not grant a user additional permissions, so you'll only
 
 There are also occasions where you want to delete a whole bunch of records quickly. Or maybe you need to delete a huge amount of records but want the system to take care of it, quietly, while no-one else is using the system.
 
-As well as manually processing bulk delete requests from the Items, Customers, Vendors, and Fixed Assets list pages, you can create a new Delete Package and pick select which tables you want to delete.
-
-# How Much?
-
-## It's Free
-
-This extension is fully featured and completely free for you to use. If you find it useful, please leave a review on [Microsoft's AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.bcappslimited1693858041247%7CAID.bulk-delete%7CPAPPID.f6ed7976-9eb2-4854-b0e3-ab8a4a3f23ea?tab=Overview) and link to the app on LinkedIn.
+As well as manually processing bulk delete requests from the Items, Customers, Vendors, and Fixed Assets list pages, you can create a new Delete Package and pick select which tables you want to delete. In order to use the delete packages feature to control your database size, you must have a license for Bulk Delete. There is a free trial option which will allow you to trial the product for thirty days.
 
 Just in case you're not sure how to get started and install the product, checkout our [Install Guide](/BulkDelete/install-guide). For a more in-depth look at the features, see our [Usage Scenarios](/BulkDelete/usage-scenarios).
 
