@@ -50,7 +50,7 @@ You agree not to, and you will not permit others to:
 
 ## Related Agreements
 
-By agreeing to this EULA, you also agree to comply with the terms of [Microsoft Commercial Marketplace Terms of Use](https://learn.microsoft.com/en-nz/legal/marketplace/marketplace-terms) and [Microsoft Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement), and any other agreements incorporated herein by reference. Links to these agreements can be found on the [Bulk Delete Product Page](https://appsource.microsoft.com/en-NZ/product/DynamicsBC/PUBID.bcappslimited1693858041247%7CAID.nz-bank-account-validator%7CPAPPID.0a89d807-b47c-487d-97ec-a1c63d794cca) within Microsoft AppSource.
+By agreeing to this EULA, you also agree to comply with the terms of [Microsoft Commercial Marketplace Terms of Use](https://learn.microsoft.com/en-nz/legal/marketplace/marketplace-terms) and [Microsoft Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement), and any other agreements incorporated herein by reference. Links to these agreements can be found on the [Bulk Delete Product Page](https://marketplace.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.bcappslimited1693858041247%7CAID.bulk-delete%7CPAPPID.f6ed7976-9eb2-4854-b0e3-ab8a4a3f23ea?tab=Overview) within Microsoft AppSource.
 
 ## Jurisdiction
 
