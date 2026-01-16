@@ -28,7 +28,7 @@ page_nav:
         url: 
 ---
 
-# What's New in Version 2.0.19.0
+# What's New in Version 2.0.26.0
 
 ## Licensing Changes
 
@@ -47,9 +47,6 @@ In this release we've had a complete rethink of how the Bulk Delete processing s
 - The progress dialog when deleting as a foreground task has been removed and has resulted in a noticeable performance increase.
 - The counting of records now happens as a page background task meaning the page will render even if there are many millions of records that match the filter. Previously extremely large tables could have a significant delay when waiting for the record count to complete.
 - Delete Package definitions can now be exported and imported which is a useful way to preserve "data clean-up" packages that get lost when a Sandbox is overwritten with a copy of Production.
-
-
-
 
 # What's New in Version 1.0.16.0
 
