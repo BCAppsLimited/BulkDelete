@@ -30,11 +30,13 @@ page_nav:
 
 # Customer List
 
-![Image showing the Bulk Delete action on the Customer List page](/screenshots/contexthelp/CustomerList.png)
+![Image showing the Bulk Delete action on the Customer List page.](/screenshots/contexthelp/CustomerList.png)
 
 A new action has been added to the **Customer List** page that will attempt to delete the selected records. If any of the records failed to delete you will be asked if you want to see the error messages for each of the records.
 
 # Delete Package
+
+![Image showing the Delete Package page.](/screenshots/contexthelp/DeletePackage.png)
 
 A delete package represents a collection of tables that will be deleted in the order in which they appear on the subpage. The card page comprises three parts: 
 
@@ -103,9 +105,13 @@ This action launches the filters page for the current package line. It works the
 
 # Delete Package Line Filters
 
+![Image showing the Delete Package Line Filters page.](/screenshots/contexthelp/DeletePackageLineFilters.png)
+
 The Delete Package Line Filters page allows a filter to be set for any field on the table that is used on the current Delete Package Line. For more details on how to use this page, see the [Usage Scenarios: Set Filters](/BulkDelete/usage-scenarios/#set-filters) topic.
 
 # Delete Package Line Runs
+
+![Image showing the Delete Package Line Runs page.](/screenshots/contexthelp/DeletePackageLineRuns.png)
 
 This page shows the runs that occurred (and still remain) for a given delete package line. Every time a user processes a delete package either directly or through a job queue entry, a new delete package line run is created for each line. This page shows you the history of how many records were processed, how long it took and provides access to any messages for individual records.
 
@@ -135,6 +141,8 @@ This page shows the runs that occurred (and still remain) for a given delete pac
 
 # Delete Package Runs
 
+![Image showing the Delete Package Runs page.](/screenshots/contexthelp/DeletePackageRuns.png)
+
 This page shows a list of runs for delete packages. The page can be run from the drill down on the delete package page or alone to show the full history of delete runs.
 
 ## ☰ Fields
@@ -150,6 +158,8 @@ This page shows a list of runs for delete packages. The page can be run from the
 | Lines | Specifies the number delete package line runs for this delete package run. The value can be used to drill down to show the realted delete package line runs. |
 
 # Delete Packages
+
+![Image showing the Delete Packages page.](/screenshots/contexthelp/DeletePackages.png)
 
 The delete packages page shows a list of delete packages in the system. A delete package is a collection of tables that will be deleted in the order they appear on the delete package lines subpage from the [Delete Package](#delete-package) card page.
 
@@ -186,6 +196,8 @@ A new action has been added to the **Item List** page that will attempt to delet
 
 # Record Delete Attempts
 
+![Image showing the Record Delete Attempts page.](/screenshots/contexthelp/RecordDeleteAttempts.png)
+
 This page shows the results of an attempt to delete a records from a table. Depending on the delete action that was allocated to the delete package line this will either show errors only or errors and successful delete attempts.
 
 ## ☰ Fields
@@ -197,6 +209,8 @@ This page shows the results of an attempt to delete a records from a table. Depe
 | Error Message | If the delete attempt failed, the error message that explains the failure is stored here. |
 
 # Reorder Package Lines
+
+![Image showing the Reorder Package Lines page.](/screenshots/contexthelp/ReorderPackageLines.png)
 
 This page is used to change the sort order of package lines in a delete package. The order the lines appear in the package (which is determined by Line No.) will also determine the order in which the lines are processed. Since the lines are processed sequentially, it might be important to you that records from some tables are delete before records from other tables. The page contains fields that show the delete package line (but are non-editable) and has actions to **Move Up** and **Move Down** which will move the currently selected record either up or down in the list.
 
