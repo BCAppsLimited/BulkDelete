@@ -46,7 +46,7 @@ If any of the selected records failed to delete, you will see a dialog box askin
 
 ![Image showing the results of the bulk delete.](/screenshots/usagescenarios/CompleteWith4Fail.png)
 
-You can review the reasons why the records failed to delete by clicking the drill down on the **Failed to Delete** count to see the **Delete Requests** page.
+Select **Yes** to review the reasons why the records failed to delete.
 
 ![Image showing the four records that failed to delete.](/screenshots/usagescenarios/DeleteRequestsWithFourErrors.png)
 
@@ -201,10 +201,10 @@ If you want to add the **Bulk Delete** action to your own extensions, you can si
       "id": "f6ed7976-9eb2-4854-b0e3-ab8a4a3f23ea",
       "name": "Bulk Delete",
       "publisher": "BC Apps Limited",
-      "version": "2.0.19.0"
+      "version": "2.0.26.0"
     }
 ```
-Then on the list page, simply add the following action. Please note that this is for deleting Item records from the Item Card page. You should replace the BC_BulkDelete with your own action name that uses your own prefix, you should change the ItemToDelete variable declaration and name to refer to the record you are actually deleting. The option will use the multi-select as the required records to delete if the user has selected more than one record, otherwise it will copy the filters from the record.
+Then on the list page, simply add the following action. Please note that this is for deleting Customer records from the Customer List page. You should replace the BC_BulkDelete with your own action name that uses your own prefix, you should change the CustomerToDelete variable declaration and name to refer to the record you are actually deleting. The option will use the multi-select as the required records to delete.
 
 ```
     actions
